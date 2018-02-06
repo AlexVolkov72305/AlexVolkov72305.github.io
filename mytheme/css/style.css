@@ -1,0 +1,763 @@
+@font-face{
+    font-family: SFUIText-Medium;
+    src: url("../fonts/SFUIText-Medium.otf");
+}
+
+@font-face{
+    font-family: MinionPro-BoldIt;
+    src: url("../fonts/MinionPro-BoldIt.otf");
+}
+
+@font-face{
+    font-family: MinionPro-MediumIt;
+    src: url("../fonts/MinionPro-MediumIt.otf");
+}
+
+@font-face{
+    font-family: MinionPro-SemiboldIt;
+    src: url("../fonts/MinionPro-SemiboldIt.otf");
+}
+
+@font-face{
+    font-family: SFUIDisplay-Semibold;
+    src: url("../fonts/SFUIDisplay-Semibold.otf");
+}
+
+@font-face{
+    font-family: MinionPro-Regular;
+    src: url("../fonts/MinionPro-Regular.otf");
+}
+
+body {color: #333;}
+
+a,
+button{outline: none !important;}
+a:hover,
+a:focus,
+a:active{text-decoration: none;}
+.form-control-feedback{display: none;}
+.btn_submit{
+	border-radius: 4px;
+	border: none;
+	height: 34px;
+}
+
+.ok{text-align: center;}
+.ok img{margin-top: 40px;}
+.ok p{color: #4040e6;}
+.ok .good{
+	margin-top: 30px;
+	font-size: 18px;
+}
+
+#top{
+	z-index: 10;
+	bottom: 20px;
+	cursor: pointer;
+	display: none;
+	position: fixed;
+	right: 40px;
+}
+/*=======================================================================*/
+.header-bg{
+	background: url('../img/header-bg.png');
+	color: #fff;
+}
+.header-bg a{color: #fff;}
+.header-bg .row{margin-top: 50px;}
+.header-bg .logo a{
+	font-size: 26px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "SFUIText-Medium";
+}
+.header-bg .navbar nav{text-align: center;}
+.header-bg .navbar li{
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px 15px;
+}
+.header-bg .navbar li a{
+	font-family: "SFUIText-Medium";
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.header-bg .phone a{
+	font-family: "SFUIText-Medium";
+	font-size: 26px;
+	text-decoration: none;
+}
+
+.white-btn{
+	margin: 0 -5px;
+	padding: 10px 14px;
+	color: #1d35a0 !important;
+	font-family: "MinionPro-BoldIt";
+	font-size: 18px;
+	background: #fff;
+	text-align: center;
+	display: inline-block;
+
+	-webkit-box-shadow: 4px 4px 10px 0px rgba(64, 64, 230, 0.4);
+	-moz-box-shadow:    4px 4px 10px 0px rgba(64, 64, 230, 0.4);
+	box-shadow:         4px 4px 10px 0px rgba(64, 64, 230, 0.4);
+}
+
+.separator{
+	width: 70px;
+	height: 4px;
+	background: #fff;
+	margin: 15px 0;
+	display: inline-block;
+}
+
+.header-bg .title p:first-child{
+	font-family: "SFUIText-Medium";
+	font-size: 40px;
+}
+
+.header-bg .title span {
+    display: inherit;
+    font-size: 24px;
+}
+
+.header-bg .title p:last-child{
+	font-family: "SFUIText-Medium";
+	font-size: 23px;
+}
+.header-bg .descr p{
+	margin-top: 20px;
+	margin-bottom: 40px;
+	font-family: "SFUIText-Medium";
+	padding-right: 70px;
+    text-align: justify;
+}
+
+
+/*=======================================================================*/
+.do-order-bg{
+	background: url('../img/do-order-bg.png'); 
+	margin-top: -16px;
+}
+.do-order-bg input{
+	margin: 0 5px;
+	width: 172px !important;
+	color: #fff;
+}
+.do-order-bg p{
+	color: #fff;
+	margin: 20px 0;
+	font-family: "SFUIText-Medium";
+	font-size: 13px;
+}
+.do-order-bg form{margin: 20px 0;}
+.do-order-bg form input:not([type="submit"]){
+	border-radius: 0;
+	background: transparent;
+	height: 40px;
+	font-size: 18px;
+	font-family: "MinionPro-MediumIt";
+}
+
+.do-order-bg form input[type="submit"]{
+	border: none;
+	height: 40px;
+	font-size: 18px;
+	font-family: "MinionPro-MediumIt";
+}
+
+.do-order-bg form input::-webkit-input-placeholder {color:#fff; font-style: italic;}
+.do-order-bg form input::-moz-placeholder          {color:#fff; font-style: italic;}/* Firefox 19+ */
+.do-order-bg form input:-moz-placeholder           {color:#fff; font-style: italic;}/* Firefox 18- */
+.do-order-bg form input:-ms-input-placeholder      {color:#fff; font-style: italic;}
+
+
+
+/*=======================================================================*/
+.services-bg{background: url('../img/services-bg.png');}
+.services-bg .title{
+	text-align: center;
+	margin: 50px auto 20px;
+}
+.services-bg h3 {
+	color: #333;
+	font-size: 30px;
+	font-family: "MinionPro-MediumIt";
+}
+.services-bg .title p{
+	font-family: "MinionPro-BoldIt";
+	font-size: 30px;
+	
+}
+.services-bg .separator{background: #1d35a0;}
+.services-bg ul{
+	padding-left: 18px;
+	margin: 20px 0;
+	list-style-image: url('../img/marker.png');
+}
+.services-bg li{
+	font-family: "SFUIText-Medium";
+	margin-bottom: 16px;
+	font-size: 16px; 
+}
+.calculate-box{text-align: center;}
+.calculate-box p{
+	font-family: "SFUIText-Medium";
+	text-align: center;
+	font-size: 16px;
+	margin-top: 50px;
+}
+.calculate-box-btn{
+	padding: 10px 25px;
+	background: #4040e6;
+	color: #fff;
+	font-family: "MinionPro-MediumIt";
+	font-size: 20px;
+	display: inline-block;
+	margin: 20px auto 80px;
+	border: 2px solid #4040e6;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+.calculate-box-btn:hover,
+.calculate-box-btn:focus,
+.calculate-box-btn:active{
+	color: #23527c;
+	background-color: #fff;
+    border: 2px solid #4040e6;
+    -webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+
+/*=======================================================================*/
+.price-list-bg{
+	background-image: url('../img/price-list-bg.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+    background-color: #edeff7;
+}
+.price-list-bg .title{
+	text-align: center;
+	margin: 50px auto 20px;
+}
+.price-list-bg .title p{
+	font-family: "MinionPro-BoldIt";
+	font-size: 30px;
+}
+.price-list-bg .separator{background: #1d35a0;}
+.price-box{
+	padding: 25px;
+	background-color: #fff;
+	border-radius: 10px;
+	background-position: center right;
+	background-repeat: no-repeat;
+	font-family: "SF-UI-Display-Regular";
+	height: 360px;
+	margin-bottom: 50px;
+}
+.price-box.price-bg{background-image: url('../img/price.png');}
+.price-box.price-bg-granul{background-image: url('../img/granul.png');}
+.price-box.price-bg-granul span {
+	font-size: 20px;
+    font-family: "SFUIText-Medium";
+    float: left;
+}
+
+.price-box.price-bg-granul .granul-button {
+	font-size: 16px;
+	font-family: "MinionPro-MediumIt";
+	color: #fff;
+	background-color: #4040e6;
+	padding: 8px 15px;
+	display: inline-block;
+	margin-top: 25px;
+	border: 2px solid #4040e6;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+.price-box.price-bg-granul .granul-button:hover {
+	color: #23527c;
+	background-color: #fff;
+    border: 2px solid #4040e6;
+    -webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+.price-box td{border: none !important;}
+.price-box p:first-child{
+	font-size: 30px;
+	font-family: "MinionPro-MediumIt";
+}
+.price-box p:last-child{
+	font-size: 16px;
+	font-family: "SFUIText-Medium";
+}
+
+.price-box.price-bg .table strong,span {
+	font-size: 20px;
+	font-family: "SFUIText-Medium";
+	display: inline-block;
+}
+.price-box.price-bg .table{width: 57%;}
+.price-box.price-bg .table tr {
+	border-bottom: 1px solid #d1d1d1;
+}
+.price-box .table tr {
+	border-bottom: 1px solid #d1d1d1;
+}
+.price-box.price-bg .table tr:last-child {
+	border-bottom: none;
+}
+.price-box .table tr:last-child {
+	border-bottom: none;
+}
+.price-box.price-bg .table tr td {
+	padding: 5px 0;
+}
+
+.price-box .table tr td {
+	padding: 5px 0; 
+}
+
+.price-box.price-bg .table tr td i {
+	font-size: 18px;
+	padding-left: 4px; 
+}
+
+.price-box .table tr td i {
+	font-size: 18px;
+	padding-left: 4px; 
+}
+
+.price-box .table tr td span m {
+	font-size: 16px;
+	line-height: 5px;
+	color: #565656;
+	display: block;
+    padding-top: 5px;
+}
+.price-list-bg .container .download-price{text-align: center; margin-bottom: 75px;}
+.price-list-bg .container .download-price .white-link {
+	display: inline-block;
+	padding: 10px 40px;
+	color: #4040e6;
+	background-color: #fff;
+	font-size: 20px;
+	font-family: "MinionPro-SemiboldIt";
+	border: 2px solid #4040e6;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+.price-list-bg .container .download-price .white-link:hover {
+	color: #fff;
+	background-color: #4040e6;
+	border: 2px solid #4040e6;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+/*=======================================================================*/
+.example-bg .title{
+	text-align: center;
+	margin: 50px auto 20px;
+	font-family: "SFUIText-Medium";
+}
+.example-bg .title p{
+	font-family: "MinionPro-BoldIt";
+	font-size: 30px;
+}
+.example-bg .separator{background: #1d35a0;}
+.example-box{
+	background: #f6f6f6;
+	text-align: center;
+	padding: 20px 0;
+	height: 350px;
+	position: relative;
+}
+.example-box .title{
+	height: 60px;
+	margin: 0 auto 50px;
+	font-size: 17px; 
+}
+.example-box img{margin: 0 auto;}
+.example-box .info{
+	position: absolute;
+	display: flex;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(64,64,230,0.9);
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+}
+.example-box .info div{
+	margin: 20px 0;
+}
+.example-box .main-title,
+.example-box .main-descr{
+	-webkit-transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+	color: #fff;
+	text-align: center;
+	height: 25%;
+}
+
+.example-box .main-title{
+	font-size: 16px;
+	font-family: "SFUIDisplay-Semibold";
+}
+.example-box .main-descr{
+	font-size: 16px;
+	font-family: "SFUIText-Medium";
+	text-align: left;
+	padding: 0 20px; 
+}
+
+@-moz-document url-prefix()
+{
+	.example-box:hover .main-descr{margin-top: -80px !important;}
+}
+.example-box:hover .info{
+	opacity: 1;
+	visibility: visible;
+}
+
+
+/*=======================================================================*/
+.reason-bg{background: #f7f7f7;}
+.reason-bg .title{
+	text-align: center;
+	margin: 50px auto 20px;
+}
+.reason-bg .title p{
+	font-family: "MinionPro-BoldIt";
+	font-size: 30px;
+}
+.reason-bg .separator{background: #1d35a0;}
+.reason-bg ul{text-align: center;}
+.reason-bg li{
+	width: 200px;
+	text-align: left;
+	display: inline-block;
+	vertical-align: top;
+	font-family: "SFUIText-Medium";
+	margin-bottom: 30px;
+	padding-right: 70px;
+}
+.reason-bg li p{margin-top: 30px;}
+.reason-btn{
+	padding: 10px 25px;
+	background: transparent;
+	color: #4040e6;
+	border: 1px solid #4040e6;
+	font-size: 20px;
+	font-style: italic;
+	display: inline-block;
+	margin: 20px auto 80px;
+}
+
+.reason-btn:hover,
+.reason-btn:focus,
+.reason-btn:active{color: #4040e6;}
+
+.reason-bg .container .white-link {
+	margin-bottom: 100px;
+	display: inline-block;
+	padding: 10px 40px;
+	color: #4040e6;
+	background-color: #fff;
+	font-size: 20px;
+	font-family: "MinionPro-SemiboldIt";
+	border: 2px solid #4040e6;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+.reason-bg .container .white-link:hover {
+	color: #fff;
+	background-color: #4040e6;
+	border: 2px solid #4040e6;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+/*=======================================================================*/
+.equipment-bg{font-family: "SF-UI-Display-Regular";}
+.equipment-bg .title{
+	text-align: center;
+	margin: 50px auto 20px;
+}
+
+.equipment-bg .container {
+	margin-top: 40px;
+	border: 3px solid #4040e6;
+	padding-right: 0px;
+    padding-left: 0;
+}
+
+.equipment-bg .container .carousel .carousel-inner {
+	margin-bottom: 40px;
+}
+.equipment-bg .title p{
+	font-family: "MinionPro-BoldIt";
+	font-size: 30px;
+}
+.equipment-bg .separator{background: #1d35a0;}
+.equipment-bg p strong{font-size: 20px;}
+.equipment-bg img{margin: 0 auto;}
+.controls{
+	text-align: center;
+	margin: 20px 0;
+}
+
+.controls .carousel-indicators{
+	position: static;
+	margin: 0 auto;
+	display: inline-block;
+	width: auto;
+}
+.controls .carousel-indicators li.active{
+	background: transparent;
+	border: 2px solid #4040e6;
+}
+.controls .carousel-indicators li{
+	background: #ccc;
+	border: 2px solid #ccc;
+}
+
+.controls a{
+	display: inline-block;
+	opacity: 1 !important;
+	background: none !important;
+	position: relative;
+	margin: 0 20px;
+	width: auto;
+	display: inline-block;
+}
+.carousel-indicators li:last-child{display: none;}
+
+.carousel-inner .slider #metaslider_container_27 .flexslider flex-control-paging {
+	
+}
+
+.carousel-inner .slider #metaslider_container_27 .flexslider {
+	width: 100%;
+}
+.carousel-inner .slider #metaslider_container_27 .flexslider ul.slides {
+	width: 50%;
+	margin-left: 70px;
+}
+.carousel-inner .slider #metaslider_container_27 .flexslider ul.slides li .caption-wrap {
+	position: absolute;
+    top: 0;
+    left: 112%;
+    color: #333;
+    background-color: #fff;
+}
+.carousel-inner .slider #metaslider_container_27 .flexslider ul.slides li .caption-wrap .caption {
+	font-family: "MinionPro-BoldIt";
+	font-size: 20px;
+	padding-left: 55px;
+}
+.equipment-bg .container .carousel .carousel-inner .blog_info {
+	z-index: 0;
+	width: 50%;
+	position: absolute;
+    top: 10%;
+    left: 60%;
+    display: inline-block;
+    color: #333;
+    font-size: 16px;
+    width: 400px;
+    font-family: "SFUIText-Medium";
+}
+
+/*=======================================================================*/
+.reviews-bg{
+	margin-top: 50px;
+	font-family: "MinionPro-Regular";
+	background: #4040e6;
+	color: #fff;
+	padding-bottom: 50px;
+}
+.reviews-bg .title{
+	text-align: center !important;
+	margin: 50px auto 20px;
+}
+.reviews-bg .title p{
+	font-family: "MinionPro-BoldIt" !important;
+	font-size: 30px !important;
+	width: 100% !important;
+}
+.reviews-bg .separator{background: #fff;}
+
+.reviews-bg .container p {
+	width: 85%;
+    padding-left: 40px;
+    font-size: 20px;
+	font-family: "MinionPro-Regular"; 
+}
+
+.reviews-bg .container ul {
+	padding-top: 15px;
+}
+
+.reviews-bg .container ul li {
+	padding-left: 110px;
+	display: block;
+	line-height: 15px;
+	font-family: "SFUIDisplay-Semibold";
+	font-size: 14px;
+}
+.reviews-bg .container img.avatar {
+	border-radius: 100%;
+	margin-left: 40px;
+	float: left;
+}
+
+.reviews-bg .container .review {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/*=======================================================================*/
+.packing-application-bg{font-family: "SF-UI-Display-Regular";}
+.packing-application-bg .title{
+	text-align: center;
+	margin: 50px auto 20px;
+}
+.packing-application-bg .title p{
+	font-family: "MinionPro-BoldIt";
+	font-size: 30px;
+}
+.packing-application-bg .separator{background: #1d35a0;}
+
+.packing-application-bg .choose{
+	text-align: left;
+	font-size: 20px !important;
+}
+.packing-application-bg label{font-size: 16px;}
+.packing-application-bg strong{font-size: 18px;}
+.packing-application-bg td{border: none !important;}
+.packing-application-bg .form-block{margin-bottom: 50px;}
+
+
+.number input::-webkit-outer-spin-button,
+.number input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.number button{height: 40px;}
+.number button input{
+	text-align: center;
+	border: none;
+	width: 20px;
+}
+.number-text,
+.number{
+	display: none;
+	margin-left: 20px;
+}
+
+.v-packing .radio{
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px 20px;
+}
+.v-packing .radio:first-child{margin-left: 0;}
+.dop .checkbox{margin-bottom: 25px;}
+.contact-info{margin-top: 20px;}
+.contact-info textarea{
+	resize: none;
+	height: 130px;
+}
+
+/*=======================================================================*/
+.contacts-bg .title{
+	text-align: center;
+	margin: 50px auto 20px;
+}
+.contacts-bg .title p{
+	font-family: "MinionPro-BoldIt" !important;
+	font-size: 30px !important;
+	width: 100% !important;
+}
+.contacts-bg .container .row p {
+	font-family: "SFUIText-Medium";
+	font-size: 20px;
+}
+.contacts-bg .separator{background: #1d35a0;}
+.contacts-bg a{color: #4040e6;}
+.contacts-bg a:hover,
+.contacts-bg a:active,
+.contacts-bg a:focus{color: #4040e6;}
+
+
+
+/*=======================================================================*/
+.map{margin: 30px 0;}
+footer{
+	text-align: center;
+	font-family: "SF-UI-Display-Medium";
+	text-transform: uppercase;
+}
+
+
+/*=======================================================================*/
+@media (min-width: 991px) and (max-width: 1200px){
+	.do-order-bg input{
+		margin: 0;
+		width: 140px !important;
+	}
+	.equipment-bg .container .carousel .carousel-inner .blog_info {display: none;}
+}
+
+@media (max-width: 991px){
+	.header-bg{background-size: cover;}
+	.header-bg .logo,
+	.header-bg .phone,
+	.header-bg .white-btn-box,
+	.header-bg .title{text-align: center;}
+	.header-bg .white-btn{margin: 20px auto;}
+	.do-order-bg form{text-align: center;}
+
+}
+
+@media (max-width: 768px){
+	.do-order-bg input{margin: 0 auto;}
+}
