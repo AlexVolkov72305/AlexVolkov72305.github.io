@@ -2,55 +2,57 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
+.lnk-collps:hover {
 	background: #fff;
 }
 
-.nav .menu-head .menu_level_1 {
+.menu_level_1 {
 	display: flex;
 	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
 
-.nav .menu-head .menu_level_1 .item_1 {
+.menu_level_1 .item_1 {
 	background: #ccc;
 }
 
 
 
-.nav .menu-head .menu_level_1 .item_1 .title {
+.menu_level_1 .item_1 .title {
 	cursor: pointer;
 }
 
-.nav .menu-head .menu_level_1 .item_1 ul {
-  margin: 0;
-  padding-left: 20px;
-  display: none;
-  list-style-type: disc;
+.menu_level_1 .item_1 .menu_level_2 .item_2 button.accordion {
+	cursor: pointer;
+	
 }
 
-.nav .menu-head .menu_level_1 .item_1.open ul {
-  display: block;
+.panel {
+	display: none;
+	padding: 0 20px;
+	background: #fff;
 }
 
-.nav .menu-head .menu_level_1 .item_1 .menu_level_2 {
-	border: 2px solid #000;
+.panel.show {
+	display: block;
 }
 
+.menu_level_1 .item_1 .menu_level_2 {
+	display: none;
+}
 
-.nav .menu-head .menu_level_1 .item_1 .menu_level_2 .lnk-collps {
-	padding: 10px 20px;
+.menu_level_1 .item_1:hover .menu_level_2 {
+	display: block;
+}
+
+.menu_level_1 .item_1 .menu_level_2 .item_2 .btn1_open, .btn2_open, .btn3_open {
+	padding: 5px;
+}
+
+.menu_level_1 .item_1 .menu_level_2 .item_2 .btn1_close, .btn2_close, .btn3_close{
+	transform: rotate(90deg);
 	display: inline-block;
+	padding: 5px;
 }
 
-.nav .menu-head .menu_level_1 .item_1 .menu_level_2 .item_2 .menu_level_3 {
-	list-style-type: none;
-	padding-left: 0;
-}
-
-.nav .menu-head .menu_level_1 .item_1 .menu_level_2 .item_2 .menu_level_3 .item_3 {
-	padding: 10px 20px 10px 0;
-}
-
-.nav .menu-head .menu_level_1 .item_1 .menu_level_2 .item_2 .menu_level_3 .item_3 a{
-	padding: 10px 20px;
-}
