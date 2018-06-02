@@ -31,17 +31,16 @@ body {
 		p {
 			color: #fff;
 			font-size: 30px;
-			float: left;
-			order: 1;
 		}
 		justify-content: flex-end;
 		h6 {
 			color: #fff;
 			font-size: 20px;
+			    margin-top: -45px;
 		}
 		text-align: center;
 		
-		margin-top: 15px;
+		margin-top: 20px;
 	}
 	.wrapper {
 		.button {
@@ -72,7 +71,7 @@ body {
 			.logo {
 				width: 220px;
 				margin: 0 auto;
-				order: 0;
+				
 				
 			}
 			h3 {
@@ -84,14 +83,14 @@ body {
     			padding: 10px 60px;
     			border-radius: 10px;
     			margin-top: 40px;
-    			order: 4;
+    			
 			}
 			h1 {
 				font-size: 60px;
 				letter-spacing: 6px;
 				color: #fff;
 				margin-top: 40px;
-				order: 2;
+				
 			}
 
 		}
@@ -106,10 +105,7 @@ body {
 				opacity: 0.6;
 				padding: 70px;
 				margin: 30px 20px;
-				order: 5;
-				img {
-
-				}
+				
 
 			}
 		}
@@ -205,4 +201,51 @@ body {
 			color: #fff;
 		}
 	}
+}
+
+
+
+@media (max-width: 500px) {
+
+.prem .block {
+	width: 80%;
+}
+
+.prem .block .block-center {
+	flex-direction: column;
+	
+}
+
+.prem .block .block-center .left {
+	margin: 101px 60px 0px 60px;
+}
+
+.prem .block .block-center .center {
+	    margin: 45px 60px 60px;
+}
+
+.prem .block .block-center .right {
+	       margin: 36px 60px 20px 55px;
+}
+
+.prem .block .block-center h5 {
+	right: -140px;
+}
+
+.header .baner .info h1 {
+	font-size: 26px;
+}
+
+.header .baner .plays {
+	display: none;
+}
+
+.wrapper {
+	flex-direction: column;
+	width:80%;
+}
+
+.header .wrapper .button.right {
+	display: none;
+}
 }
