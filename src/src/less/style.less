@@ -1,0 +1,285 @@
+@import 'smart-grid.less';
+
+.reset();
+
+@font-face {
+    font-family: 'Lato-Heavy';
+    src: url('../fonts/PFDinTextCompPro-Light.ttf');
+}
+
+.heavy() {
+	font-family: 'Lato-Heavy', sans-serif;
+	font-weight: 600;
+}
+
+body {
+	.heavy();
+}
+
+.wrapper {
+	max-width: 1200px;
+	width: 98%;
+	margin: 0 auto; 
+	display: flex;
+	justify-content: space-between;
+}
+
+.header {
+	background: url(../img/header_bg.png) top center no-repeat;
+	background-size: cover;
+	.button_right {
+		p {
+			color: #fff;
+			font-size: 30px;
+		}
+		justify-content: flex-end;
+		h6 {
+			color: #fff;
+			font-size: 20px;
+			    margin-top: -45px;
+		}
+		text-align: center;
+		
+		margin-top: 20px;
+	}
+	.wrapper {
+		.button {
+			margin-top: 40px;
+			background: #f4a734;
+			border-radius: 10px;
+			text-align: center;
+			padding: 10px 10px;
+			order: 3;
+			p {
+				color: #2e5175;
+				font-size: 16px;
+			}
+			h6 {
+				margin-top: 3px;
+				color: #f0efee;
+				font-size: 20px;
+			}
+		}
+	}
+	.baner {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		.info {
+			text-align: center;
+			.col-12();
+			.logo {
+				width: 220px;
+				margin: 0 auto;
+				
+				
+			}
+			h3 {
+				font-size: 26px;
+				color: #f4a734;
+				background: #29698f;
+				opacity: 0.8;
+    			display: inline-block;
+    			padding: 10px 60px;
+    			border-radius: 10px;
+    			margin-top: 40px;
+    			
+			}
+			h1 {
+				font-size: 60px;
+				letter-spacing: 6px;
+				color: #fff;
+				margin-top: 40px;
+				
+			}
+
+		}
+		.plays {
+			display: flex;
+			justify-content: center;
+			.col-12();
+			.play { 
+				width: 50px;
+				background: #fff;
+				border-radius: 10px;
+				opacity: 0.6;
+				padding: 70px;
+				margin: 30px 20px;
+				
+
+			}
+		}
+	}
+
+	.welcome  {
+		background: #000;
+		opacity: 0.6;
+		.wrapper {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				
+				height: 100px;
+				text-align: center;
+				.section-header {
+					color: #fff;
+					font-size: 30px;
+
+				}
+			
+		}
+	}
+}
+
+.prem {
+	background: url(../img/prem_bg.png) top -50px center no-repeat;
+	background-size: cover;
+
+	.block {
+		
+		
+		
+		.block-center {
+			background: #6d7890;
+			display: flex;
+			    width: 50%;
+			margin: 50px auto;
+			.ok {
+			margin: 20px 15px 0 60px;
+			img {
+				width: 40px;
+				height: 50px;
+				margin-left: 37px;
+				    margin-bottom: 28px;
+				}
+				.left {
+					
+					border: 3px solid #fff;
+					    padding: 10px 20px;
+					p {
+						font-size: 22px;
+						color: #fff;
+					}
+				}
+			}
+			
+			h5 {
+				font-size: 80px;
+				color: #fff;
+				position: relative;
+    			right: -46px;
+			}
+			.right {
+				color: #fff;
+				border: 3px solid #fff;
+				padding: 20px;
+				font-size: 22px;
+				    display: inline-table;
+				margin: 100px 60px 275px 0;
+			}
+			.center {
+				color: #f2a359;
+				border: 3px solid #b2b5b8;
+				padding: 20px;
+				font-size: 22px;
+				margin: 100px 20px 80px 20px;
+			}
+		}
+		
+	}
+
+	.footer {
+		background: #000;
+		opacity: 0.6;
+		padding: 15px 0;
+		text-align: center;
+		h2 {
+			color: #fff;
+			font-size: 30px;
+			text-transform: uppercase;
+		}
+		h3 {
+			color: #fff;
+		}
+	}
+}
+
+
+
+@media (max-width: 720px) {
+
+.prem .block {
+	width: 80%;
+}
+
+.prem .block .block-center {
+	flex-direction: column;
+	width: 70%;
+	
+}
+
+.prem .block .block-center .ok {
+	margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prem .block .block-center .ok img {
+	    margin-top: 20px;
+	        margin-left: 0;
+}
+
+.prem .block .block-center .left {
+	    
+	
+}
+
+.prem .block .block-center .center {
+	    margin: 45px 60px 60px;
+}
+
+.prem .block .block-center .right {
+	    margin: 20px auto;
+}
+
+.prem .block .block-center h5 {
+	    text-align: center;
+	    width: 77%;
+}
+
+.header .baner .info h1 {
+	font-size: 26px;
+}
+
+.header .baner .plays {
+	display: none;
+}
+
+.wrapper {
+	flex-direction: column;
+	width:80%;
+}
+
+.header .wrapper .button.right {
+	display: none;
+}
+
+.prem .block .block-center .left p {
+	text-align: center;
+}
+.prem .block .block-center .right {
+	text-align: center;
+}
+}
+
+@media (max-width: 440px) { 
+
+.prem .block .block-center {
+	width: 95%;
+}
+	.prem .block .block-center h5 {
+	    text-align: center;
+	    width: 70%;
+	}
+}
