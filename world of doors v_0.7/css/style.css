@@ -169,6 +169,7 @@ img {
   color: #fff;
   font-size: 16px;
   text-decoration: none;
+  display: inline-block;
 }
 
 .header .menu_header .menu ul li a:hover {
