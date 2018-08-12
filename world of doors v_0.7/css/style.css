@@ -581,6 +581,10 @@ img {
   flex-wrap: wrap;
 }
 
+.footer .wrapper .logo_footer a {
+ display: inline-block; 
+}
+
 .footer .wrapper .address_footer p {
   font-size: 20px;
   font-family: 'Sochi2014_ligft', sans-serif;
