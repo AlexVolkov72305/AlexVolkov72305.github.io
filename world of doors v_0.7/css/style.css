@@ -146,6 +146,10 @@ img {
   padding: 7px 0;
 }
 
+.header .menu_header .logo a {
+  display: inline-block;
+}
+
 .header .menu_header .menu {
   width: calc(66.66666666666667% - 30px);
   padding: 15px 0;
