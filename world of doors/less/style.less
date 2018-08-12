@@ -1,0 +1,579 @@
+@import 'project.less';
+
+/* font family */
+
+@font-face {
+    font-family: 'Sochi2014_medium';
+    src: url('../fonts/Sochi2014_medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sochi2014_ligft';
+    src: url('../fonts/Sochi2014_ligft.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.reset();
+
+.header {
+	
+	background: #292929;
+
+	.menu_header {
+		background: #292929;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+
+		.logo {
+			text-align: center;
+			.col-2();
+			.col-lg-3();
+			.col-xs-12();
+			padding: 7px 0;
+		}
+
+		.menu {
+			.col-8();
+			.col-lg-6();
+			.col-xs-12();
+			padding: 15px 0;
+			ul {
+				display: flex;
+				justify-content: center;
+
+				li {
+					margin: 0 15px;
+
+					a {
+						font-family: 'Sochi2014_ligft', sans-serif;
+						color: #fff;
+						font-size: 16px;
+						text-decoration: none;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+
+		.phone {
+			.col-2();
+			.col-lg-3();
+			.col-xs-12();
+			padding: 7px 0;
+			p {
+				color: #fff; 
+				text-align: center;
+				font-size: 12px;
+				text-transform: uppercase;
+				font-family: 'Sochi2014_ligft', sans-serif;
+
+			}
+			.nomber {
+				font-weight: 900;
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+
+
+.wrapper {
+	margin: 0 auto;
+	display: flex;
+	max-width: 1120px;	
+}
+
+
+
+
+
+.center_header {
+	background: #fff url(../img/bg_header.png) right top no-repeat;
+	height: 700px;
+
+	.top_header {
+		.left_info {
+			text-align: center;
+			h1, h2 {
+				font-family: 'Sochi2014_medium', sans-serif;
+				font-size: 100px;
+				color: #0060ff;
+				-webkit-text-stroke: 3px #fff; 
+				text-shadow: 0 0 15px rgba(0,0,0,0.8);
+				margin-top: 30px;
+			}
+			h2 {
+				font-size: 50px;
+				color: #000;
+				-webkit-text-stroke: 2px #fff;
+				margin-top: -20px;
+    			margin-bottom: 30px; 
+			}
+			.order {
+				display: inline-block;
+				font-family: 'Sochi2014_medium', sans-serif;
+				font-size: 24px;
+				color: #fff;
+				text-decoration: none;
+				background: #047524;
+				border-radius: 15px;
+				padding: 8px 30px;
+				border: none;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+.catalog {
+	
+	h3 {
+		font-size: 36px;
+		font-family: 'Sochi2014_ligft', sans-serif;
+		margin: 60px auto;
+		display: table;
+		text-align: center;
+	}
+
+	.center {
+		position: relative;
+		img {
+			width: 70%;
+			margin: 0 auto;
+		}
+
+		.catalog-prev-btn {
+			top: 45%;
+		    position: absolute;
+		    left: 0;
+		    cursor: pointer;
+		}
+		.catalog-next-btn {
+			right: 0;
+			cursor: pointer;
+			top: 45%;
+		    position: absolute;
+		}	
+	}
+
+	.btn_catal {
+		margin: 40px auto;
+	    justify-content: center;
+
+	    .btn_catalog {
+			display: inline-block;
+			font-family: 'Sochi2014_medium', sans-serif;
+			font-size: 24px;
+			color: #fff;
+			text-decoration: none;
+			background: #c9000d;
+			border-radius: 15px;
+			padding: 8px 30px;
+			text-transform: uppercase;
+			border: none;
+		}
+	}
+}
+
+.bg_phone {
+	background: #fff url(../img/bg_phone.png) center center no-repeat;
+	background-size: cover;
+	height: 300px;
+	
+	.bg_info_phone {
+		justify-content: flex-end;
+		.info_phone {
+			flex-direction: column;
+			.col-6();
+			.col-md-8();
+			.col-sm-10();
+			.col-xs-12();
+			text-align: center;
+
+			.form-input {
+				display: block;
+				border: none;
+				width: 250px;
+				padding: 15px;
+				margin: 10px auto;
+				border-radius: 5px;
+				outline: none;
+			}
+
+			.send {
+				display: inline-block;
+				font-family: 'Sochi2014_medium', sans-serif;
+				font-size: 24px;
+				color: #fff;
+				text-decoration: none;
+				background: #047524;
+				border-radius: 15px;
+				padding: 8px 20px;
+				width: 250px;
+				margin: 15px 0;
+				text-transform: uppercase;
+				border: none;
+			}
+
+			h3 {
+				font-size: 32px;
+				font-family: 'Sochi2014_medium', sans-serif;
+				color: #fff;
+				margin-top: 50px;
+			}
+			p {
+				font-size: 16px;
+				font-family: 'Sochi2014_medium', sans-serif;
+				color: #fff;
+				margin-bottom: 10px;
+				line-height: 15px;
+			}
+
+			.info_text {
+				font-size: 11px;
+			}
+		}
+	}	
+}
+
+.bg_free {
+	background: #fff url(../img/bg_free.png)  center center no-repeat;
+	background-size: cover;
+	max-width: 100%;
+	.free {
+	display: flex;
+	justify-content: center;
+		.left_block {
+			.col-5();
+			.col-md-10();
+			.col-xs-12();
+			text-align: center;
+			h3 {
+				font-size: 22px;
+				font-family: 'Sochi2014_medium', sans-serif;
+				margin-top: 50px;
+				text-transform: uppercase;
+			}
+			p {
+				font-size: 14px;
+				font-family: 'Sochi2014_ligft', sans-serif;
+				width: 95%;
+				margin: 0 auto;
+			}
+			.form_info {
+				margin-top: 50px;
+				box-shadow: 0 0 10px rgba(0,0,0,0.5);
+				h4 {
+					font-size: 18px;
+					font-family: 'Sochi2014_ligft', sans-serif;
+					width: 40%;
+					text-transform: uppercase;
+					margin: 20px auto;
+					display: inline-block;
+					span {
+						font-size: 24px;
+						font-family: 'Sochi2014_medium', sans-serif;
+						color: #ff0000;
+						text-transform: uppercase;
+					}
+				}
+				.form-input {
+					display: block;
+					border: none;
+					width: 70%;
+					padding: 10px 15px;
+					margin: 20px auto;
+					margin-bottom: 40px;
+					border-radius: 10px;
+					outline: none;
+					box-shadow: 0 0 10px rgba(0,0,0,0.5);
+				}
+				.order {
+					display: inline-block;
+					font-family: 'Sochi2014_medium', sans-serif;
+					font-size: 24px;
+					text-transform: uppercase;
+					color: #fff;
+					text-decoration: none;
+					background: #047524;
+					border-radius: 15px;
+					border: none;
+					padding: 8px 40px;
+					margin-bottom: 60px;
+				}
+			}
+		}
+
+		.right_block {
+			.col-5();
+			img {
+				margin-top: 20px;
+				margin-bottom: -4px;
+			}
+		}
+	}
+	
+}
+
+.reviews {
+	background: #eee url(../img/bg_reviews.png) center center no-repeat;
+	background-size: cover;
+	height: 620px;
+
+	h3 {
+		padding-top: 35px;
+		font-size: 36px;
+		font-family: 'Sochi2014_ligft', sans-serif;
+		margin: 0 auto;
+		display: table;
+		text-align: center;
+	}
+	.catalog-slider-btn {
+		color: #fff;
+		cursor: pointer;
+	}
+	.single-item {
+		display: flex;
+		align-items: center;
+		height: 530px;
+		.all {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+
+			img {
+				.col-5();
+				.col-sm-8();
+				.col-xs-12();
+				justify-content: center;
+				
+			}
+			.info_client {
+				.col-6();
+				.col-sm-10();
+				.col-xs-12();
+				justify-content: center;
+				h3 {
+					color: #fff;
+					font-family: 'Sochi2014_medium', sans-serif;
+					font-size: 24px;
+					padding: 35px 0;
+				}
+				p {
+					color: #fff;
+					font-size: 18px;
+					font-family: 'Sochi2014_ligft', sans-serif;
+					width: 70%;
+					text-align: center;
+					margin: 0 auto;
+				}
+			}	
+		}
+	}
+}
+
+.bg_contact {
+	.contact {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+		.info_contact {
+			.col-6();
+			.col-sm-12();
+			text-align: center;
+			.logo {
+				margin-bottom: 30px;
+			}
+			p {
+				font-size: 24px;
+				font-family: 'Sochi2014_ligft', sans-serif;
+			}
+		}
+		.map {
+			.col-6();
+
+		}
+	}
+}
+
+.footer {
+	height: 160px;
+	background: #292929;
+	.wrapper {
+		.wrapper();
+		height: 160px;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: -4px;
+		flex-wrap: wrap;
+		.logo_footer {
+			.col-xs-12();
+		}
+		.address_footer {
+			.col-xs-12();
+			p {
+				font-size: 20px;
+				font-family: 'Sochi2014_ligft', sans-serif;
+				color: #fff;
+			}
+		}
+		
+		
+	}
+}
+
+
+/*
+Страница КАТАЛОГ
+*/
+
+.page_catalog {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 50px auto;
+
+	.cart {
+		.col-3();
+		.col-md-4();
+		.col-sm-6();
+		.col-xs-12();
+		height: 100%;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+		margin: 15px 15px;
+		border-radius: 15px;
+		display: flex;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	    flex-direction: column;
+	    text-align: center;
+
+		img {
+			width: 40%;
+			height: 80%;
+			margin: 15px auto;
+		}
+
+		.info_cart {
+
+		}
+
+		p {
+			font-size: 16px;
+			font-family: 'Sochi2014_ligft', sans-serif;
+			
+		}
+		span {
+			font-size: 20px;
+			font-family: 'Sochi2014_ligft', sans-serif;
+			margin: 10px auto;
+		}
+
+		.btn_sale {
+			font-size: 20px;
+			font-family: 'Sochi2014_ligft', sans-serif;
+			display: inline-block;
+			text-transform: uppercase;
+			color: #fff;
+			text-decoration: none;
+			background: #db000d;
+			border-radius: 15px;
+			border: none;
+			padding: 8px 40px;
+			margin: 15px auto;
+		}
+	}
+}
+
+@media screen and (max-width: 960px){
+	.bg_free .free .right_block {
+		display: none;
+	}
+
+	.bg_free .free .left_block {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 780px){
+
+	.reviews {
+		height: 720px;
+	}
+    .center_header .top_header {
+    	justify-content: center;
+    }
+
+    .reviews .single-item .all .info_client h3 {
+    	padding: 10px 0;
+    }
+
+    .reviews .single-item .all img {
+    	padding-top: 190px;
+    }
+    .bg_contact .contact .info_contact {
+    	padding: 20px 0;
+    }
+    .bg_contact .contact .map {
+    	display: contents;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .catalog .center img {
+    	width: 30%;
+    }
+    .center_header .top_header .left_info h1, .center_header .top_header .left_info h2 {
+    	font-size: 50px;
+    	-webkit-text-stroke: 1px #fff;
+    }
+
+    .center_header .top_header .left_info img {
+    	width: 50%;
+    }
+    .bg_phone {
+    	height: 340px;
+    	.bg_info_phone {
+    		justify-content: center;
+    	}
+    }
+    .bg_free .free .left_block .form_info .order {
+    	font-size: 16px;
+    }
+    .bg_free .free .left_block .form_info {
+    	h4 {
+    		font-size: 14px;
+    	}
+    }
+    .reviews .single-item .all img {
+    	width: 90%;
+    	height: 90%;
+    	padding-top: 20px;
+    }
+
+    .reviews .single-item .all .info_client {
+    	h3 {
+    		font-size: 18px;
+    	}
+    	p {
+    		font-size: 14px;
+    	}
+    }
+    .header .menu_header {
+    	justify-content: center;
+    }
+
+    .footer .wrapper {
+    	justify-content: center;
+    	text-align: center;
+    }
+
+}

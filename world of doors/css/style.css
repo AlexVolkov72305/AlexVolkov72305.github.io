@@ -1,0 +1,854 @@
+/* font family */
+
+@font-face {
+  font-family: 'Sochi2014_medium';
+  src: url('../fonts/Sochi2014_medium.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sochi2014_ligft';
+  src: url('../fonts/Sochi2014_ligft.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+legend {
+  color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  background: #292929;
+}
+
+.header .menu_header {
+  background: #292929;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header .menu_header .logo {
+  text-align: center;
+  width: calc(16.666666666666668% - 30px);
+  padding: 7px 0;
+}
+
+.header .menu_header .menu {
+  width: calc(66.66666666666667% - 30px);
+  padding: 15px 0;
+}
+
+.header .menu_header .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.header .menu_header .menu ul li {
+  margin: 0 15px;
+}
+
+.header .menu_header .menu ul li a {
+  font-family: 'Sochi2014_ligft', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.header .menu_header .menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.header .menu_header .phone {
+  width: calc(16.666666666666668% - 30px);
+  padding: 7px 0;
+}
+
+.header .menu_header .phone p {
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: 'Sochi2014_ligft', sans-serif;
+}
+
+.header .menu_header .phone .nomber {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1120px;
+}
+
+.center_header {
+  background: #fff url(../img/bg_header.png) right top no-repeat;
+  height: 700px;
+}
+
+.center_header .top_header .left_info {
+  text-align: center;
+}
+
+.center_header .top_header .left_info h1,
+.center_header .top_header .left_info h2 {
+  font-family: 'Sochi2014_medium', sans-serif;
+  font-size: 100px;
+  color: #0060ff;
+  -webkit-text-stroke: 3px #fff;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  margin-top: 30px;
+}
+
+.center_header .top_header .left_info h2 {
+  font-size: 50px;
+  color: #000;
+  -webkit-text-stroke: 2px #fff;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+.center_header .top_header .left_info .order {
+  display: inline-block;
+  font-family: 'Sochi2014_medium', sans-serif;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  background: #047524;
+  border-radius: 15px;
+  padding: 8px 30px;
+  border: none;
+  text-transform: uppercase;
+}
+
+.catalog h3 {
+  font-size: 36px;
+  font-family: 'Sochi2014_ligft', sans-serif;
+  margin: 60px auto;
+  display: table;
+  text-align: center;
+}
+
+.catalog .center {
+  position: relative;
+}
+
+.catalog .center img {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.catalog .center .catalog-prev-btn {
+  top: 45%;
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+}
+
+.catalog .center .catalog-next-btn {
+  right: 0;
+  cursor: pointer;
+  top: 45%;
+  position: absolute;
+}
+
+.catalog .btn_catal {
+  margin: 40px auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.catalog .btn_catal .btn_catalog {
+  display: inline-block;
+  font-family: 'Sochi2014_medium', sans-serif;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  background: #c9000d;
+  border-radius: 15px;
+  padding: 8px 30px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.bg_phone {
+  background: #fff url(../img/bg_phone.png) center center no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+.bg_phone .bg_info_phone {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.bg_phone .bg_info_phone .info_phone {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: calc(50% - 30px);
+  text-align: center;
+}
+
+.bg_phone .bg_info_phone .info_phone .form-input {
+  display: block;
+  border: none;
+  width: 250px;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 5px;
+  outline: none;
+}
+
+.bg_phone .bg_info_phone .info_phone .send {
+  display: inline-block;
+  font-family: 'Sochi2014_medium', sans-serif;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  background: #047524;
+  border-radius: 15px;
+  padding: 8px 20px;
+  width: 250px;
+  margin: 15px 0;
+  text-transform: uppercase;
+  border: none;
+}
+
+.bg_phone .bg_info_phone .info_phone h3 {
+  font-size: 32px;
+  font-family: 'Sochi2014_medium', sans-serif;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.bg_phone .bg_info_phone .info_phone p {
+  font-size: 16px;
+  font-family: 'Sochi2014_medium', sans-serif;
+  color: #fff;
+  margin-bottom: 10px;
+  line-height: 15px;
+}
+
+.bg_phone .bg_info_phone .info_phone .info_text {
+  font-size: 11px;
+}
+
+.bg_free {
+  background: #fff url(../img/bg_free.png) center center no-repeat;
+  background-size: cover;
+  max-width: 100%;
+}
+
+.bg_free .free {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.bg_free .free .left_block {
+  width: calc(41.66666666666667% - 30px);
+  text-align: center;
+}
+
+.bg_free .free .left_block h3 {
+  font-size: 22px;
+  font-family: 'Sochi2014_medium', sans-serif;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
+.bg_free .free .left_block p {
+  font-size: 14px;
+  font-family: 'Sochi2014_ligft', sans-serif;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.bg_free .free .left_block .form_info {
+  margin-top: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.bg_free .free .left_block .form_info h4 {
+  font-size: 18px;
+  font-family: 'Sochi2014_ligft', sans-serif;
+  width: 40%;
+  text-transform: uppercase;
+  margin: 20px auto;
+  display: inline-block;
+}
+
+.bg_free .free .left_block .form_info h4 span {
+  font-size: 24px;
+  font-family: 'Sochi2014_medium', sans-serif;
+  color: #ff0000;
+  text-transform: uppercase;
+}
+
+.bg_free .free .left_block .form_info .form-input {
+  display: block;
+  border: none;
+  width: 70%;
+  padding: 10px 15px;
+  margin: 20px auto;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.bg_free .free .left_block .form_info .order {
+  display: inline-block;
+  font-family: 'Sochi2014_medium', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  background: #047524;
+  border-radius: 15px;
+  border: none;
+  padding: 8px 40px;
+  margin-bottom: 60px;
+}
+
+.bg_free .free .right_block {
+  width: calc(41.66666666666667% - 30px);
+}
+
+.bg_free .free .right_block img {
+  margin-top: 20px;
+  margin-bottom: -4px;
+}
+
+.reviews {
+  background: #eee url(../img/bg_reviews.png) center center no-repeat;
+  background-size: cover;
+  height: 620px;
+}
+
+.reviews h3 {
+  padding-top: 35px;
+  font-size: 36px;
+  font-family: 'Sochi2014_ligft', sans-serif;
+  margin: 0 auto;
+  display: table;
+  text-align: center;
+}
+
+.reviews .catalog-slider-btn {
+  color: #fff;
+  cursor: pointer;
+}
+
+.reviews .single-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 530px;
+}
+
+.reviews .single-item .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.reviews .single-item .all img {
+  width: calc(41.66666666666667% - 30px);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.reviews .single-item .all .info_client {
+  width: calc(50% - 30px);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.reviews .single-item .all .info_client h3 {
+  color: #fff;
+  font-family: 'Sochi2014_medium', sans-serif;
+  font-size: 24px;
+  padding: 35px 0;
+}
+
+.reviews .single-item .all .info_client p {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Sochi2014_ligft', sans-serif;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.bg_contact .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.bg_contact .contact .info_contact {
+  width: calc(50% - 30px);
+  text-align: center;
+}
+
+.bg_contact .contact .info_contact .logo {
+  margin-bottom: 30px;
+}
+
+.bg_contact .contact .info_contact p {
+  font-size: 24px;
+  font-family: 'Sochi2014_ligft', sans-serif;
+}
+
+.bg_contact .contact .map {
+  width: calc(50% - 30px);
+}
+
+.footer {
+  height: 160px;
+  background: #292929;
+}
+
+.footer .wrapper {
+  max-width: 1200px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1120px;
+  height: 160px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: -4px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.footer .wrapper .address_footer p {
+  font-size: 20px;
+  font-family: 'Sochi2014_ligft', sans-serif;
+  color: #fff;
+}
+
+/*
+Страница КАТАЛОГ
+*/
+
+.page_catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.page_catalog .cart {
+  width: calc(25% - 30px);
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 15px 15px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.page_catalog .cart img {
+  width: 40%;
+  height: 80%;
+  margin: 15px auto;
+}
+
+.page_catalog .cart p {
+  font-size: 16px;
+  font-family: 'Sochi2014_ligft', sans-serif;
+}
+
+.page_catalog .cart span {
+  font-size: 20px;
+  font-family: 'Sochi2014_ligft', sans-serif;
+  margin: 10px auto;
+}
+
+.page_catalog .cart .btn_sale {
+  font-size: 20px;
+  font-family: 'Sochi2014_ligft', sans-serif;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  background: #db000d;
+  border-radius: 15px;
+  border: none;
+  padding: 8px 40px;
+  margin: 15px auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .header .menu_header .logo {
+    width: calc(25% - 30px);
+  }
+
+  .header .menu_header .menu {
+    width: calc(50% - 30px);
+  }
+
+  .header .menu_header .phone {
+    width: calc(25% - 30px);
+  }
+
+  .footer .wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .bg_phone .bg_info_phone .info_phone {
+    width: calc(66.66666666666667% - 30px);
+  }
+
+  .bg_free .free .left_block {
+    width: calc(83.33333333333334% - 30px);
+  }
+
+  .footer .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .page_catalog .cart {
+    width: calc(33.333333333333336% - 30px);
+  }
+
+  .bg_free .free .right_block {
+    display: none;
+  }
+
+  .bg_free .free .left_block {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .bg_phone .bg_info_phone .info_phone {
+    width: calc(83.33333333333334% - 30px);
+  }
+
+  .reviews .single-item .all img {
+    width: calc(66.66666666666667% - 30px);
+  }
+
+  .reviews .single-item .all .info_client {
+    width: calc(83.33333333333334% - 30px);
+  }
+
+  .bg_contact .contact .info_contact {
+    width: calc(100% - 30px);
+  }
+
+  .footer .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .page_catalog .cart {
+    width: calc(50% - 30px);
+  }
+
+  .reviews {
+    height: 720px;
+  }
+
+  .center_header .top_header {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .reviews .single-item .all .info_client h3 {
+    padding: 10px 0;
+  }
+
+  .reviews .single-item .all img {
+    padding-top: 190px;
+  }
+
+  .bg_contact .contact .info_contact {
+    padding: 20px 0;
+  }
+
+  .bg_contact .contact .map {
+    display: contents;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .header .menu_header .logo {
+    width: calc(100% - 30px);
+  }
+
+  .header .menu_header .menu {
+    width: calc(100% - 30px);
+  }
+
+  .header .menu_header .phone {
+    width: calc(100% - 30px);
+  }
+
+  .bg_phone .bg_info_phone .info_phone {
+    width: calc(100% - 30px);
+  }
+
+  .bg_free .free .left_block {
+    width: calc(100% - 30px);
+  }
+
+  .reviews .single-item .all img {
+    width: calc(100% - 30px);
+  }
+
+  .reviews .single-item .all .info_client {
+    width: calc(100% - 30px);
+  }
+
+  .footer .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .footer .wrapper .logo_footer {
+    width: calc(100% - 30px);
+  }
+
+  .footer .wrapper .address_footer {
+    width: calc(100% - 30px);
+  }
+
+  .page_catalog .cart {
+    width: calc(100% - 30px);
+  }
+
+  .catalog .center img {
+    width: 30%;
+  }
+
+  .center_header .top_header .left_info h1,
+  .center_header .top_header .left_info h2 {
+    font-size: 50px;
+    -webkit-text-stroke: 1px #fff;
+  }
+
+  .center_header .top_header .left_info img {
+    width: 50%;
+  }
+
+  .bg_phone {
+    height: 340px;
+  }
+
+  .bg_phone .bg_info_phone {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .bg_free .free .left_block .form_info .order {
+    font-size: 16px;
+  }
+
+  .bg_free .free .left_block .form_info h4 {
+    font-size: 14px;
+  }
+
+  .reviews .single-item .all img {
+    width: 90%;
+    height: 90%;
+    padding-top: 20px;
+  }
+
+  .reviews .single-item .all .info_client h3 {
+    font-size: 18px;
+  }
+
+  .reviews .single-item .all .info_client p {
+    font-size: 14px;
+  }
+
+  .header .menu_header {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .footer .wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
