@@ -6728,8 +6728,8 @@ $(document).ready(function () {
 		$('.photo_slider').slick({
 				infinite: true,
 				slidesToShow: 3,
-				prevArrow: '<button class="arr-prev2" type="button"></button>',
-				nextArrow: '<button class="arr-next2" type="button"></button>',
+				prevArrow: '<button class="arr-prev" type="button"></button>',
+				nextArrow: '<button class="arr-next" type="button"></button>',
 				slidesToScroll: 1,
 				responsive: [{
 						breakpoint: 992,
@@ -6801,14 +6801,16 @@ $(document).ready(function () {
 						breakpoint: 992,
 						settings: {
 								slidesToShow: 3,
-								slidesToScroll: 3,
+								slidesToScroll: 1,
 								infinite: true
 						}
 				}, {
 						breakpoint: 768,
 						settings: {
 								slidesToShow: 1,
-								slidesToScroll: 1
+								slidesToScroll: 1,
+								prevArrow: '<button class="arr-prev2" type="button"></button>',
+								nextArrow: '<button class="arr-next2" type="button"></button>'
 						}
 				}, {
 						breakpoint: 576,
@@ -6819,6 +6821,9 @@ $(document).ready(function () {
 								nextArrow: '<button class="arr-next" type="button"></button>'
 						}
 				}]
+		});
+		$('tab_boutique').on('shown.bs.tab', function (e) {
+				$('.prise_slider').slick('reinit');
 		});
 });
 
