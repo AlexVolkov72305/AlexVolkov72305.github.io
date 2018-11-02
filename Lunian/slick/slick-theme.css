@@ -117,7 +117,7 @@
     height: 230px;
     width: 80px;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50px;
     z-index: 1;
     transform: translateY(-50%);
@@ -132,7 +132,7 @@
     height: 230px;
     width: 80px;
     position: absolute;
-    top: 40%;
+    top: 50%;
     right: 50px;
     z-index: 1;
     transform: translateY(-50%);

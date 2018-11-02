@@ -28,10 +28,9 @@
 				<span class="menu_btn">menu</span>
 				<span class="bars"></span>
 			</div>
-			<div class="closed active">
-				<span class="menu_btn">menu</span>
-				<span class="bars"></span>
-			</div>
+			<span class="close" style="display: none;">
+				
+			</span>
 			<ul class="main">
 				<li><a href="#services">Услуги</a></li>
 				<li><a href="#bonuses">Бонусы</a></li>
@@ -136,7 +135,13 @@ About Us Section
 	<div class="container">
 		<h1 class="title"><span>О</span>нас</h1>
 	</div>
-	<img src="production/images/about_bg.png" class="about_bg" alt="Фон страницы О нас">
+	<div class="about_slider">
+		<img src="production/images/about_bg.png" class="about_bg" alt="Фон страницы О нас">
+		<img src="production/images/about_bg.png" class="about_bg" alt="Фон страницы О нас">
+		<img src="production/images/about_bg.png" class="about_bg" alt="Фон страницы О нас">
+		<img src="production/images/about_bg.png" class="about_bg" alt="Фон страницы О нас">
+	</div>
+	
 	<div class="container">
 		<div class="about_us row">
 
@@ -177,7 +182,7 @@ Benefits Section
 	    	<img src="production/images/benefits_bg.png" alt="#">
 	    	<div class="info">
 	    		<h1 class="title_slider wow fadeInLeft">ЛУЧШАЯ ЛАЗЕРНАЯ<br/> ЭПИЛЯЦИЯ В г. КОРОЛЁВ</h1>
-				<a href="#" class="wow fadeInRight more">подробнее</a>
+				<a href="#" class="wow fadeInRight more popup-btn_more">подробнее</a>
 				<a href="#" class="wow fadeInUp sign_up popup-btn">записаться</a>
 	    	</div>
 	    </div>
@@ -185,7 +190,7 @@ Benefits Section
 	    	<img src="production/images/benefits_bg.png" alt="#">
 	    	<div class="info">
 	    		<h1 class="title_slider wow fadeInLeft">ЛУЧШАЯ ЛАЗЕРНАЯ<br/> ЭПИЛЯЦИЯ В г. КОРОЛЁВ</h1>
-				<a href="#" class="wow fadeInRight more">подробнее</a>
+				<a href="#" class="wow fadeInRight more popup-btn_more">подробнее</a>
 				<a href="#" class="sign_up popup-btn">записаться</a>
 	    	</div>
 	    </div>
@@ -193,7 +198,7 @@ Benefits Section
 	    	<img src="production/images/benefits_bg.png" alt="#">
 	    	<div class="info">
 	    		<h1 class="title_slider wow fadeInLeft">ЛУЧШАЯ ЛАЗЕРНАЯ<br/> ЭПИЛЯЦИЯ В г. КОРОЛЁВ</h1>
-				<a href="#" class="wow fadeInRight more">подробнее</a>
+				<a href="#" class="wow fadeInRight more popup-btn_more">подробнее</a>
 				<a href="#" class="sign_up popup-btn">записаться</a>
 	    	</div>
 	    </div>
@@ -452,20 +457,20 @@ Footer Section
 	<div class="content_footer_bottom">
 		<div class="mask_footer"></div>
 		<div class="container container_footer">
-			<div class="row">
+			<div class="row row_footer">
 				<div class="wow fadeInUp section_footer1 col-xl-6 col-lg-6 col-md-6 col-10" data-wow-delay="0.2s">
 				<ul class="nav_footer">
 					<div class="nav1">
-						<li><a href="#">Услуги</a></li>
-						<li><a href="#">Бонусы</a></li>
-						<li><a href="#">Преимущества</a></li>
-						<li><a href="#">Наши работы</a></li>
+						<li><a href="#services">Услуги</a></li>
+						<li><a href="#bonuses">Бонусы</a></li>
+						<li><a href="#benefits">Преимущества</a></li>
+						<li><a href="#work">Наши работы</a></li>
 					</div>
 					<div class="nav2">
-						<li><a href="#">Мастера</a></li>
-						<li><a href="#">Прайс</a></li>
+						<li><a href="#masters">Мастера</a></li>
+						<li><a href="#boutique">Прайс</a></li>
 						<li><a href="#">Фото салона</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li><a href="#contacts">Контакты</a></li>
 					</div>
 				</ul>
 			</div>
@@ -502,7 +507,7 @@ Footer Section
 				<button class="popup-close">&times</button>
 				<!-- Заголовок окна -->
 				
-				<p>Оставьте свои контактные данные <br>для связи</p>
+				<p>Оставьте, пожалуйста, свои контактные данные <br>для связи</p>
 				<div class="form popup-form">
 					<form action="#">
 						<div class="contact_form_popup">
@@ -531,6 +536,22 @@ Footer Section
 		</div>
 	</div>
 	
+<!--Модальное окно ПОДРОБНЕЕ-->
+
+	<div class="popup_more">
+		<!-- Само (белое) модальное окно -->
+		<div class="popup-dialog_more">
+			<!-- Содержимое модального окна -->
+			<div class="popup-content_more">
+				<button class="popup-close_more">&times</button>
+				<div class="form popup-form_more">
+					ПОДРОБНЕЕ ПОДРОБНЕЕ ПОДРОБНЕЕ ПОДРОБНЕЕ ПОДРОБНЕЕ ПОДРОБНЕЕ ПОДРОБНЕЕ ПОДРОБНЕЕ 
+					ПОДРОБНЕЕ ПОДРОБНЕЕ ПОДРОБНЕЕ ПОДРОБНЕЕ ПОДРОБНЕЕ ПОДРОБНЕЕ ПОДРОБНЕЕ ПОДРОБНЕЕ 
+					ПОДРОБНЕЕ ПОДРОБНЕЕ
+				</div>
+			</div>
+		</div>
+	</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -563,6 +584,18 @@ Footer Section
 			$('.popup-close_price').on('click', function(event) {
 				event.preventDefault();
 				$('.popup_price').fadeOut(400);
+			});
+		});
+
+		// Показать/скрыть popup окно ПОДРОБНЕЕ
+		$(document).ready(function(){
+			$('.popup-btn_more').on('click', function(event) {
+				event.preventDefault();
+				$('.popup_more').fadeIn(400);
+			});
+			$('.popup-close_more').on('click', function(event) {
+				event.preventDefault();
+				$('.popup_more').fadeOut(400);
 			});
 		});
 </script>
