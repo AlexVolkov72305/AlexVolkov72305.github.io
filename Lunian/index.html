@@ -17,7 +17,7 @@
 	<div class="header">
 		<div class="contact col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
 			<button id="on_line" class="popup-btn"><span>Запись</span> on-line</button>
-			<span class="phone">+7 (495) 367 89 88</span>
+			<a class="phone" href="tel:84953454538">+7 (495) 345 45 38</a>
 			<span class="addres">Пионерская,13 / 10:00-22:00</span>
 		</div>
 		<div class="logo col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
@@ -233,10 +233,10 @@ Bonuses Section
 		<h2 class="wow fadeInLeftwow fadeInUp  call">Запишитесь прямо сейчас <br/> и мы подарим вам карту клиента</h2>
 		<form action="#">
 			<div class="wow fadeInRight contact_form">
-				<input class="form-input" required id="name" type="text" placeholder="имя">
-				<input class="form-input" required id="phone" type="text" placeholder="телефон">
-				<input class="form-input" required id="procedure" type="text" placeholder="процедура">			
-				<input class="form-input" required id="data" type="text" placeholder="дата / время">
+				<input class="form-input" required type="text" placeholder="имя">
+				<input class="form-input" required type="text" placeholder="телефон">
+				<input class="form-input" required type="text" placeholder="процедура">			
+				<input class="form-input" required type="text" placeholder="удобная дата / время">
 				<span class="title_form">Наш менеджер перезвонит Вам и согласует <br/>все параметры Вашей записи</span>
 				<button class="wow fadeInUp form-btn">Отправить</button>
 			</div>	
@@ -477,7 +477,7 @@ Footer Section
 			<div class="wow fadeInUp section_footer2 col-xl-3 col-lg-3 col-md-3 col-10" data-wow-delay="0.4s">
 				<h2>ЗАПИСЬ on-line</h2>
 				<p class="copyright">Все права защищены - 2018</p>
-				<p class="autor">Разработка сайта и дизайн интерьера салона <strong><a href="#">kuantodi.com</a></strong></p>
+				<p class="autor">Разработка сайта и дизайн интерьера салона <strong><a href="http://kuantodi.com/">kuantodi.com</a></strong></p>
 			</div>
 			<div class="wow fadeInUp section_footer3 col-xl-3 col-lg-3 col-md-3 col-10" data-wow-delay="0.6s">
 				<div class="icon_soc">
@@ -486,7 +486,7 @@ Footer Section
 					<a href="#"><img src="production/images/icon-ins.png" alt="ins"></a>
 				</div>
 				<div class="tel_number">
-					<strong>+7 (495) 345 45 38</strong>
+					<a href="tel:84953454538">+7 (495) 345 45 38</a>
 				</div>
 				<div class="email">
 					<a class="contacts-link" href="mailto:info@lunian.ru">info@lunian.ru</a>
@@ -507,12 +507,14 @@ Footer Section
 				<button class="popup-close">&times</button>
 				<!-- Заголовок окна -->
 				
-				<p>Оставьте, пожалуйста, свои контактные данные <br>для связи</p>
+				<p>Оставьте, пожалуйста, свои контактные данные и мы подберем <br> удобное для Вас время</p>
 				<div class="form popup-form">
 					<form action="#">
 						<div class="contact_form_popup">
-							<input class="form-input_popup" required id="name" type="text" placeholder="имя">
-							<input class="form-input_popup" required id="phone" type="text" placeholder="телефон">
+							<input class="form-input_popup" required type="text" placeholder="имя">
+							<input class="form-input_popup" required type="text" placeholder="телефон">
+							<input class="form-input_popup" required type="text" placeholder="процедура">
+							<input class="form-input_popup" required type="text" placeholder="удобная дата / время">
 							<button class="form-btn_popup">Отправить</button>
 						</div>	
 					</form>
@@ -572,6 +574,18 @@ Footer Section
 			$('.popup-close').on('click', function(event) {
 				event.preventDefault();
 				$('.popup').fadeOut(400);
+			});
+		});
+
+		// Показать/скрыть popup окно ЗАПИСАТЬСЯ
+		$(document).ready(function(){
+			$('.popup-btn_sign').on('click', function(event) {
+				event.preventDefault();
+				$('.popup_sign').fadeIn(400);
+			});
+			$('.popup-close_sign').on('click', function(event) {
+				event.preventDefault();
+				$('.popup_sign').fadeOut(400);
 			});
 		});
 

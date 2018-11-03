@@ -6838,7 +6838,7 @@ $(document).ready(function () {
 });
 
 $(window).scroll(function () {
-				if ($(window).scrollTop() > 200) {
+				if ($(window).scrollTop() > 500) {
 								$('.header_nav').addClass('scroll');
 								$(".header_nav").css("opacity", "0.8");
 								$(".header_nav").css("transition ", "3s");
