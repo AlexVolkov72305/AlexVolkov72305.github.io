@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+	
 	<link rel="stylesheet" href="./production/css/app.css?ver=4.9.7" type="text/css" media="all">
 	<link rel="stylesheet" href="./production/css/Animate.css" type="text/css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
@@ -253,43 +253,43 @@
 						<h4 style="padding-left: 25px;">Комплектация</h4>
 						<div class="check">
 							<label class="checkbox_label">
-							    <input class="checkbox" type="checkbox" checked />
+							    <input class="checkbox checkbox5" type="checkbox" checked />
 							    <span class="checkbox-custom"></span>
 							    <div class="checkbox__text">Дистиллятор «SPIRIT»</div>
 							</label>
 							<div class="select_label">
-								<select class="select_box" name="select">
-									<option class="select_number">5л</option>
-									<option class="select_number">10л</option>
-									<option class="select_number">15л</option>
-									<option class="select_number">25л</option>
+								<select class="select_box" name="select_box">
+									<option><span class="select_number">5</span> </option>
+									<option> <span class="select_number">10</span> </option>
+									<option> <span class="select_number">15</span> </option>
+									<option> <span class="select_number">25</span> </option>
 								</select>
-								<div class="checkbox__text">Перегонный куб</div>
-								<span class="sale_check">2000 P</span>
+								<div class="checkbox__text">Перегонный куб (л)</div>
+								<span class="sale_check" id="price_select">2 000<span> P</span></span>
 							</div>
 							<label class="checkbox_label">
-							    <input class="checkbox" type="checkbox" />
+							    <input class="checkbox checkbox1" type="checkbox" />
 							    <span class="checkbox-custom"></span>
 							    <div class="checkbox__text">Тэн на 2,5 кВт</div>
-							    <span class="sale_check">2000 P</span>
+							    <span class="sale_check">2 000<span> P</span></span>
 							</label>
 							<label class="checkbox_label">
-							    <input class="checkbox" type="checkbox" />
+							    <input class="checkbox checkbox2" type="checkbox" />
 							    <span class="checkbox-custom"></span>
 							    <div class="checkbox__text">Регулятор мощности ТЭНа</div>
-							    <span class="sale_check">2000 P</span>
+							    <span class="sale_check">2 000<span> P</span></span>
 							</label>
 							<label class="checkbox_label">
-							    <input class="checkbox" type="checkbox" checked/>
+							    <input class="checkbox checkbox3" type="checkbox" checked/>
 							    <span class="checkbox-custom"></span>
 							    <div class="checkbox__text">Сантех комплект</div>
-							    <span class="sale_check">0 P</span>
+							    <span class="sale_check">0<span> P</span></span>
 							</label>
 							<label class="checkbox_label">
-							    <input class="checkbox" type="checkbox" checked/>
+							    <input class="checkbox checkbox4" type="checkbox" checked/>
 							    <span class="checkbox-custom"></span>
 							    <div class="checkbox__text">Доставка</div>
-							    <span class="sale_check">0 P</span>
+							    <span class="sale_check">0<span> P</span></span>
 							</label>
 
 						</div>
@@ -314,7 +314,7 @@
 							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 								<div class="result">
 									<span>Итого:</span>
-									<span>11999P</span>
+									<span id="price">11999 <span>P</span> </span>
 								</div>
 							</div>
 							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
@@ -448,6 +448,8 @@ setTimeout(function(){
 	$('.animate_block').removeClass('show').addClass('opened');
 },1000)
 </script>
+
+
 
 </body>
 </html>
